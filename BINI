@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Clothify — Modern Clothing</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">Clothify</div>
+      <nav class="nav">
+        <button id="cartBtn" class="cart-btn">Cart (<span id="cartCount">0</span>)</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Stylish Clothing for Every Day</h1>
+      <p>Quality materials. Timeless design.</p>
+    </section>
+
+    <section>
+      <h2>Products</h2>
+      <div id="products" class="product-grid"></div>
+    </section>
+  </main>
+
+  <!-- Cart Drawer -->
+  <aside id="cartDrawer" class="cart-drawer hidden">
+    <div class="cart-header">
+      <h3>Your cart</h3>
+      <button id="closeCart">Close</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total">Total: $<span id="cartTotal">0.00</span></div>
+      <button id="checkoutBtn" class="btn primary">Checkout</button>
+    </div>
+  </aside>
+
+  <!-- Product Modal -->
+  <div id="productModal" class="modal hidden" aria-hidden="true">
+    <div class="modal-content">
+      <button id="closeModal" class="modal-close">×</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Clothify — Built with a starter template</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
